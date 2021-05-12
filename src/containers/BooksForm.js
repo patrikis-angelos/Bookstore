@@ -5,7 +5,7 @@ import { createBook } from '../actions/index';
 
 const BooksForm = (props) => {
   const [title, setTitle] = useState('');
-  const [category, setCategory] = useState('');
+  const [category, setCategory] = useState('Action');
 
   const handleChange = (e) => {
     const change = e.target.id;
@@ -23,7 +23,6 @@ const BooksForm = (props) => {
       title,
       category,
     };
-    console.log(props.books);
     props.createBook(book);
   };
 
@@ -59,10 +58,6 @@ const mapDispatchToProps = (dispatch) => ({
 
 BooksForm.propTypes = {
   createBook: PropTypes.func.isRequired,
-  books: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
-const mapStateToProps = (state) => ({
-  books: state.books,
-});
 
-export default connect(mapStateToProps, mapDispatchToProps)(BooksForm);
+export default connect(null, mapDispatchToProps)(BooksForm);
