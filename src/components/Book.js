@@ -13,7 +13,11 @@ const Book = (props) => {
 };
 
 Book.propTypes = {
-  book: PropTypes.object.isRequired, //eslint-disable-line
+  book: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Book;
