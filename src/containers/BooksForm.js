@@ -8,12 +8,17 @@ const BooksForm = () => {
   return (
     <form>
       <label htmlFor="title">
-        Title
+        Title:
         <input id="title" type="text" />
       </label>
-      <select>
-        {options}
-      </select>
+      <br />
+      <label htmlFor="categories">
+        Choose Category:
+        <select id="categories">
+          {options}
+        </select>
+      </label>
+      <br />
       <input type="submit" value="Create" />
     </form>
   );
