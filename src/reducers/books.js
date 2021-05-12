@@ -9,7 +9,12 @@ const booksReducer = (bookState = [], action) => {
     }
     case REMOVE_BOOK: {
       const books = [...bookState];
-      books.delete(action.book);
+      for (let i = 0; i < books.length; i += 1) {
+        if (books[i] === action.book) {
+          books.splice(i, 1);
+          break;
+        }
+      }
       return books;
     }
     default:
