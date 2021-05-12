@@ -11,9 +11,9 @@ const BooksList = (props) => {
   ));
 
   return (
-    <table>
+    <table className="table">
       <tbody>
-        <tr>
+        <tr className="row headers">
           <th>Book ID</th>
           <th>Title</th>
           <th>Category</th>

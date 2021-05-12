@@ -6,20 +6,18 @@ const BooksForm = () => {
     <option key={option} value={option}>{option}</option>
   ));
   return (
-    <form>
-      <label htmlFor="title">
+    <form className="createBook">
+      <label className="formField" htmlFor="title">
         Title:
         <input id="title" type="text" />
       </label>
-      <br />
-      <label htmlFor="categories">
+      <label className="formField" htmlFor="categories">
         Choose Category:
         <select id="categories">
           {options}
         </select>
       </label>
-      <br />
-      <input type="submit" value="Create" />
+      <input className="formField" type="submit" value="Create" />
     </form>
   );
 };
