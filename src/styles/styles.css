@@ -11,9 +11,24 @@
   justify-content: space-between;
 }
 
-.row th {
-  width: 33%;
+.bookInfo{
+  width: 25%;
   padding: 10px;
+}
+
+.button {
+  width: calc(25% - 80px);
+  margin-left: 40px;
+  margin-right: 40px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.row button {
+  width: 25%;
+  border: 1px solid black;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .createBook {
