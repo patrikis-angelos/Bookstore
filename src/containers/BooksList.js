@@ -14,22 +14,23 @@ const BooksList = (props) => {
 
   const handleFilterChange = (filter) => {
     props.changeFilter(filter);
-    console.log(props.filter);
+  };
+
+  const mapBooks = (books) => {
+    const list = books.map((book) => (
+      <Book removeHandler={() => handleRemove(book)} key={book.id} book={book} />
+    ));
+    return list;
   };
 
   const selectBooks = (books) => {
     const { filter } = props;
     let list = [];
     if (filter === '') {
-      list = books.map((book) => (
-        <Book removeHandler={() => handleRemove(book)} key={book.id} book={book} />
-      ));
+      list = mapBooks(books);
     } else {
-      list = books
-        .filter((book) => (book.category === filter))
-        .map((book) => (
-          <Book removeHandler={() => handleRemove(book)} key={book.id} book={book} />
-        ));
+      list = books.filter((book) => (book.category === filter));
+      list = mapBooks(list);
     }
     return list;
   };
