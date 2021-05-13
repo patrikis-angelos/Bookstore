@@ -17,10 +17,10 @@ const removeBook = (book) => (
   }
 );
 
-const changeFilter = (category) => (
+const changeFilter = (filter) => (
   {
     type: CHANGE_FILTER,
-    filter: category,
+    filter,
   }
 );
 
