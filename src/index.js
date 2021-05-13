@@ -20,6 +20,7 @@ const state = {
       category: 'Novel',
     },
   ],
+  filter: '',
 };
 
 const store = createStore(rootReducer, state);
