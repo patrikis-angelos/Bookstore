@@ -2,14 +2,14 @@
 
 # Bookstore
 
-Initialization of a bookstore app
+A basic bookstore app where a user can create books in alist and remove them.
 
 ## Built With
 
 - React.js
 - Redux
 
-## [Live Link](https://bookstore-patrick.herokuapp.com/)
+## [Live Link](https://patrick-bookstore.herokuapp.com/)
 
 ## Getting Started
 
