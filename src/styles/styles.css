@@ -38,7 +38,7 @@
   display: block;
 }
 
-.formField:not(:first-child) {
+.formField {
   margin-top: 20px;
 }
 
