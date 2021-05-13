@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import categories from '../assets/categories';
 
 const CategoryFilter = (props) => {
-  const categories = ['All', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
-  const options = categories.map((option) => (
+  const filters = ['All', ...categories];
+  const options = filters.map((option) => (
     <option key={option} value={option}>{option}</option>
   ));
 

@@ -4,8 +4,8 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import App from './components/App';
 import rootReducer from './reducers/index';
-import './styles/reset.css';
-import './styles/styles.css';
+import './assets/reset.css';
+import './assets/styles.css';
 
 const state = {
   books: [
