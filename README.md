@@ -2,7 +2,7 @@
 
 # Bookstore
 
-A basic bookstore app where a user can create books in alist and remove them.
+A basic bookstore app where a user can create books in a list, remove them and apply a category filter to browse through the books.
 
 ## Built With
 
