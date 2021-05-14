@@ -15,7 +15,7 @@ const CategoryFilter = (props) => {
 
   return (
     <select
-      className="select mont-regular standar m-l-40 color-light-grey hover-grey background-white"
+      className="select mont-regular standar m-l-40 color-light-grey hover-grey background-white pointer"
       onChange={(e) => handleFilterChange(e)}
     >
       {options}

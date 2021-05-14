@@ -38,8 +38,10 @@ const BooksList = (props) => {
   const list = selectBooks(books);
 
   return (
-    <div>
-      <Nav filterHandler={handleFilterChange} />
+    <>
+      <header>
+        <Nav filterHandler={handleFilterChange} />
+      </header>
       <table className="table">
         <tbody>
           <tr className="row headers">
@@ -51,7 +53,7 @@ const BooksList = (props) => {
           {list}
         </tbody>
       </table>
-    </div>
+    </>
   );
 };
 

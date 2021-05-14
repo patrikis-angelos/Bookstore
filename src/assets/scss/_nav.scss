@@ -13,3 +13,17 @@
 .select:focus {
   outline: none;
 }
+
+.icon-wrapper {
+  border: 1px solid #e8e8e8;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.icon {
+  align-self: center;
+  margin-left: 14px;
+  width: 17px;
+  height: 17px;
+}
