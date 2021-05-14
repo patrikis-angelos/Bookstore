@@ -2,12 +2,13 @@
 
 # Bookstore
 
-A basic bookstore app where a user can create books in a list, remove them and apply a category filter to browse through the books.
+A bookstore app where the user can create and remove books as well as browse through his collection by applying category filters 
 
 ## Built With
 
 - React.js
 - Redux
+- SCSS
 
 ## [Live Link](https://patrick-bookstore.herokuapp.com/)
 
