@@ -14,7 +14,10 @@ const CategoryFilter = (props) => {
   };
 
   return (
-    <select onChange={(e) => handleFilterChange(e)}>
+    <select
+      className="select"
+      onChange={(e) => handleFilterChange(e)}
+    >
       {options}
     </select>
   );

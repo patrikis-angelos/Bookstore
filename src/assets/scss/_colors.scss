@@ -1,0 +1,25 @@
+$light-grey: #c4c4c4;
+
+$colors: (
+  azure: #0290ff,
+  blue: #4386bf,
+  medium-blue: #307bbe,
+  dodger-blue: #379cf6,
+  grey: #121212,
+  light-grey: $light-grey,
+  white: white,
+);
+
+@each $key, $value in $colors {
+  .color-#{"" + $key} {
+    color: $value;
+  }
+
+  .background-#{"" + $key} {
+    background-color: $value;
+  }
+}
+
+.hover-light-grey:hover {
+  color: $light-grey;
+}
