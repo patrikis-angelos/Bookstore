@@ -49,6 +49,19 @@
   cursor: pointer;
 }
 
+.max-width-200 {
+  width: 300px;
+  word-wrap: break-word;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
 .m-t-5 {
   margin-top: 5px;
 }
@@ -298,11 +311,11 @@
 }
 
 .color-dark-grey {
-  color: grey;
+  color: #888;
 }
 
 .background-dark-grey {
-  background-color: grey;
+  background-color: #888;
 }
 
 .color-light-grey {
@@ -363,7 +376,6 @@
 
 .book {
   width: 100%;
-  height: 170px;
   border: 1px solid #e8e8e8;
   border-radius: 4px;
   padding-right: 10%;
@@ -377,7 +389,7 @@
   width: 68px;
   height: 68px;
   background: linear-gradient(to bottom, #307bbe, #379cf6);
-  margin-left: 150px;
+  margin-left: 100px;
   border-radius: 50%;
   position: relative;
 }
@@ -405,6 +417,46 @@
 .progress-button {
   padding: 8px 20px;
   border-radius: 3px;
+}
+
+.create-book {
+  width: 100%;
+}
+
+.title {
+  width: 55%;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.select-wrapper {
+  width: 22%;
+}
+
+.form-select {
+  border: 1px solid #c4c4c4;
+  width: 100%;
+  appearance: none;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.arrow {
+  width: 5px;
+  height: 10px;
+  border-top: 10px solid #888;
+  border-bottom: 10px solid white;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+  top: 15px;
+  right: 10px;
+}
+
+.submit-button {
+  border: none;
+  border-radius: 4px;
+  width: 17%;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -9,10 +9,10 @@ const Book = (props) => {
   };
 
   return (
-    <div className="book flex space-between align-center m-t-40 p-l-30">
+    <div className="book flex space-between align-center m-t-40 p-l-30 p-t-20 p-b-20">
       <div>
         <p className="color-dark-grey mont-bold standard m-b-10">{book.category}</p>
-        <p className="medium roboto-bold m-b-5">{book.title}</p>
+        <p className="medium roboto-bold m-b-5 max-width-200">{book.title}</p>
         <p className="color-blue standard m-b-20 roboto-light">Author</p>
         <button type="button" className="book-button color-blue roboto-light m-r-10">Comment</button>
         <button

@@ -32,23 +32,23 @@ const BooksForm = (props) => {
   ));
 
   return (
-    <form
-      onChange={(e) => handleChange(e)}
-      onSubmit={(e) => handleSubmit(e)}
-      className="createBook"
-    >
-      <label className="formField" htmlFor="title">
-        Title:
-        <input id="title" type="text" />
-      </label>
-      <label className="formField" htmlFor="categories">
-        Choose Category:
-        <select id="categories">
-          {options}
-        </select>
-      </label>
-      <input className="formField" type="submit" value="Create" />
-    </form>
+    <div className="p-l-100 p-r-100 m-t-40">
+      <h2 className="medium color-dark-grey mont-bold">ADD NEW BOOK</h2>
+      <form
+        onChange={(e) => handleChange(e)}
+        onSubmit={(e) => handleSubmit(e)}
+        className="create-book flex space-between m-t-10"
+      >
+        <input className="title color-dark-grey" id="title" type="text" placeholder="Book title" />
+        <div className="select-wrapper relative">
+          <select className="form-select background-white color-dark-grey" id="categories">
+            {options}
+          </select>
+          <div className="arrow absolute" />
+        </div>
+        <input className="submit-button background-azure color-white roboto-bold standard" type="submit" value="ADD BOOK" />
+      </form>
+    </div>
   );
 };
 
