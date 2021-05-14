@@ -1,12 +1,18 @@
 import React from 'react';
 import BooksList from '../containers/BooksList';
 import BooksForm from '../containers/BooksForm';
+import Nav from './Nav';
 
 function App() {
   return (
     <div>
-      <BooksList />
-      <BooksForm />
+      <header>
+        <Nav />
+      </header>
+      <main>
+        <BooksList />
+        <BooksForm />
+      </main>
     </div>
   );
 }
