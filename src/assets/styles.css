@@ -8,10 +8,11 @@
 .select {
   display: block;
   border: none;
+  appearance: none;
 }
 
-.select::after {
-  display: none;
+.select:focus {
+  outline: none;
 }
 
 .flex {
@@ -210,8 +211,8 @@
   background-color: white;
 }
 
-.hover-light-grey:hover {
-  color: #c4c4c4;
+.hover-grey:hover {
+  color: #121212;
 }
 
 .mont-bold {

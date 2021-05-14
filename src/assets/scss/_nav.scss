@@ -7,8 +7,9 @@
 .select {
   display: block;
   border: none;
+  appearance: none;
 }
 
-.select::after{
-  display: none;
+.select:focus {
+  outline: none;
 }

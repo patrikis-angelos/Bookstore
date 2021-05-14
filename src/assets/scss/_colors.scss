@@ -1,11 +1,12 @@
 $light-grey: #c4c4c4;
+$grey: #121212;
 
 $colors: (
   azure: #0290ff,
   blue: #4386bf,
   medium-blue: #307bbe,
   dodger-blue: #379cf6,
-  grey: #121212,
+  grey: $grey,
   light-grey: $light-grey,
   white: white,
 );
@@ -20,6 +21,6 @@ $colors: (
   }
 }
 
-.hover-light-grey:hover {
-  color: $light-grey;
+.hover-grey:hover {
+  color: $grey;
 }
