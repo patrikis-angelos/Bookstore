@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;700&display=swap");
 .nav {
   width: 100%;
   height: 95px;
@@ -41,8 +41,44 @@
   align-items: center;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .pointer {
   cursor: pointer;
+}
+
+.m-t-5 {
+  margin-top: 5px;
+}
+
+.m-b-5 {
+  margin-bottom: 5px;
+}
+
+.m-l-5 {
+  margin-left: 5px;
+}
+
+.m-r-5 {
+  margin-right: 5px;
+}
+
+.p-t-5 {
+  padding-top: 5px;
+}
+
+.p-b-5 {
+  padding-bottom: 5px;
+}
+
+.p-l-5 {
+  padding-left: 5px;
+}
+
+.p-r-5 {
+  padding-right: 5px;
 }
 
 .m-t-10 {
@@ -58,7 +94,7 @@
 }
 
 .m-r-10 {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .p-t-10 {
@@ -74,7 +110,7 @@
 }
 
 .p-r-10 {
-  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .m-t-20 {
@@ -90,7 +126,7 @@
 }
 
 .m-r-20 {
-  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .p-t-20 {
@@ -106,7 +142,7 @@
 }
 
 .p-r-20 {
-  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .m-t-30 {
@@ -122,7 +158,7 @@
 }
 
 .m-r-30 {
-  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .p-t-30 {
@@ -138,7 +174,7 @@
 }
 
 .p-r-30 {
-  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .m-t-40 {
@@ -154,7 +190,7 @@
 }
 
 .m-r-40 {
-  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .p-t-40 {
@@ -170,7 +206,71 @@
 }
 
 .p-r-40 {
-  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.m-t-100 {
+  margin-top: 100px;
+}
+
+.m-b-100 {
+  margin-bottom: 100px;
+}
+
+.m-l-100 {
+  margin-left: 100px;
+}
+
+.m-r-100 {
+  margin-right: 100px;
+}
+
+.p-t-100 {
+  padding-top: 100px;
+}
+
+.p-b-100 {
+  padding-bottom: 100px;
+}
+
+.p-l-100 {
+  padding-left: 100px;
+}
+
+.p-r-100 {
+  padding-right: 100px;
+}
+
+.m-t-150 {
+  margin-top: 150px;
+}
+
+.m-b-150 {
+  margin-bottom: 150px;
+}
+
+.m-l-150 {
+  margin-left: 150px;
+}
+
+.m-r-150 {
+  margin-right: 150px;
+}
+
+.p-t-150 {
+  padding-top: 150px;
+}
+
+.p-b-150 {
+  padding-bottom: 150px;
+}
+
+.p-l-150 {
+  padding-left: 150px;
+}
+
+.p-r-150 {
+  padding-right: 150px;
 }
 
 .color-azure {
@@ -248,60 +348,49 @@
   font-weight: 300;
 }
 
+.roboto-bold {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+}
+
 .big {
   font-size: 30px;
 }
 
-.standar {
+.medium {
+  font-size: 22px;
+}
+
+.standard {
   font-size: 13px;
 }
 
-.table {
-  margin-left: 20px;
-  margin-top: 20px;
-  min-width: 700px;
-  max-width: 1200px;
-  width: 50%;
+.regular {
+  font-size: 16px;
 }
 
-.row {
-  display: flex;
-  justify-content: space-between;
+.book {
+  width: 100%;
+  height: 170px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding-right: 10%;
 }
 
-.bookInfo {
-  width: 25%;
-  padding: 10px;
+.book-button {
+  padding: 0;
 }
 
-.button {
-  width: calc(25% - 80px);
-  cursor: pointer;
-  border: 1px solid black;
+.complition {
+  width: 68px;
+  height: 68px;
+  background-color: red;
+  margin-left: 150px;
 }
 
-.row button {
-  width: 25%;
-  border: 1px solid black;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.createBook {
-  margin-left: 20px;
-  margin-top: 40px;
-}
-
-.formField {
-  display: block;
-}
-
-.formField:not(:first-child) {
-  margin-top: 20px;
-}
-
-.headers {
-  margin-bottom: 10px;
+.progress-button {
+  padding: 8px 20px;
+  border-radius: 3px;
 }
 
 /*# sourceMappingURL=styles.css.map */

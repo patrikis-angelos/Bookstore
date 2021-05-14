@@ -42,17 +42,9 @@ const BooksList = (props) => {
       <header>
         <Nav filterHandler={handleFilterChange} />
       </header>
-      <table className="table">
-        <tbody>
-          <tr className="row headers">
-            <th className="bookInfo">Book ID</th>
-            <th className="bookInfo">Title</th>
-            <th className="bookInfo">Category</th>
-            <th className="bookInfo"> </th>
-          </tr>
-          {list}
-        </tbody>
-      </table>
+      <main className="p-l-100 p-r-100">
+        {list}
+      </main>
     </>
   );
 };

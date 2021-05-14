@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;700&display=swap');
 
 .mont-bold {
   font-family: 'Montserrat', sans-serif;
@@ -15,10 +15,23 @@
   font-weight: 300;
 }
 
+.roboto-bold {
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 700;
+}
+
 .big {
   font-size: 30px;
 }
 
-.standar {
+.medium {
+  font-size: 22px;
+}
+
+.standard {
   font-size: 13px;
+}
+
+.regular {
+  font-size: 16px;
 }

@@ -1,8 +1,11 @@
 $pixels: (
+  5: 5px,
   10: 10px,
   20: 20px,
   30: 30px,
   40: 40px,
+  100: 100px,
+  150: 150px,
 );
 
 @each $key, $value in $pixels {
@@ -19,7 +22,7 @@ $pixels: (
   }
 
   .m-r-#{$key} {
-    margin-left: $value;
+    margin-right: $value;
   }
 
   .p-t-#{$key} {
@@ -35,6 +38,6 @@ $pixels: (
   }
 
   .p-r-#{$key} {
-    padding-left: $value;
+    padding-right: $value;
   }
 }
