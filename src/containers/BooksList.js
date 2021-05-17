@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import { removeBook, changeFilter } from '../actions/index';
-import CategoryFilter from '../components/CategoryFilter';
+import Nav from '../components/Nav';
 
 const BooksList = (props) => {
   const { books } = props;
@@ -38,20 +38,14 @@ const BooksList = (props) => {
   const list = selectBooks(books);
 
   return (
-    <div>
-      <CategoryFilter filterHandler={handleFilterChange} />
-      <table className="table">
-        <tbody>
-          <tr className="row headers">
-            <th className="bookInfo">Book ID</th>
-            <th className="bookInfo">Title</th>
-            <th className="bookInfo">Category</th>
-            <th className="bookInfo"> </th>
-          </tr>
-          {list}
-        </tbody>
-      </table>
-    </div>
+    <>
+      <header>
+        <Nav filterHandler={handleFilterChange} />
+      </header>
+      <main className="p-l-100 p-r-100">
+        {list}
+      </main>
+    </>
   );
 };
 

@@ -1,0 +1,43 @@
+$pixels: (
+  5: 5px,
+  10: 10px,
+  20: 20px,
+  30: 30px,
+  40: 40px,
+  100: 100px,
+  150: 150px,
+);
+
+@each $key, $value in $pixels {
+  .m-t-#{$key} {
+    margin-top: $value;
+  }
+
+  .m-b-#{$key} {
+    margin-bottom: $value;
+  }
+
+  .m-l-#{$key} {
+    margin-left: $value;
+  }
+
+  .m-r-#{$key} {
+    margin-right: $value;
+  }
+
+  .p-t-#{$key} {
+    padding-top: $value;
+  }
+
+  .p-b-#{$key} {
+    padding-bottom: $value;
+  }
+
+  .p-l-#{$key} {
+    padding-left: $value;
+  }
+
+  .p-r-#{$key} {
+    padding-right: $value;
+  }
+}

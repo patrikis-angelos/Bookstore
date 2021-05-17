@@ -3,18 +3,21 @@ import PropTypes from 'prop-types';
 import categories from '../assets/categories';
 
 const CategoryFilter = (props) => {
-  const filters = ['All', ...categories];
+  const filters = ['CATEGORIES', ...categories];
   const options = filters.map((option) => (
     <option key={option} value={option}>{option}</option>
   ));
 
   const handleFilterChange = (e) => {
-    const filter = e.target.value === 'All' ? '' : e.target.value;
+    const filter = e.target.value === 'CATEGORIES' ? '' : e.target.value;
     props.filterHandler(filter);
   };
 
   return (
-    <select onChange={(e) => handleFilterChange(e)}>
+    <select
+      className="select mont-regular standar m-l-40 color-light-grey hover-black background-white pointer"
+      onChange={(e) => handleFilterChange(e)}
+    >
       {options}
     </select>
   );
