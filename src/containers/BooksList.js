@@ -1,15 +1,32 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
-import { removeBook, changeFilter } from '../actions/index';
+import { removeBook, changeFilter, fetchBooks } from '../actions/index';
 import Nav from '../components/Nav';
 
 const BooksList = (props) => {
-  const { books } = props;
+  const { books, fetchBooks } = props;
+
+  const refresh = () => {
+    fetch('https://hidden-wildwood-65842.herokuapp.com/api/books', { mode: 'cors' })
+      .then((r) => r.json())
+      .then((books) => {
+        fetchBooks(books);
+      });
+  };
+
+  useEffect(() => {
+    refresh();
+  }, []);
 
   const handleRemove = (book) => {
-    props.removeBook(book);
+    fetch(`https://hidden-wildwood-65842.herokuapp.com/api/books/${book.id}`, {
+      mode: 'cors',
+      method: 'DELETE',
+    }).then(() => {
+      props.removeBook(book);
+    });
   };
 
   const handleFilterChange = (filter) => {
@@ -54,6 +71,7 @@ BooksList.propTypes = {
   filter: PropTypes.string.isRequired,
   removeBook: PropTypes.func.isRequired,
   changeFilter: PropTypes.func.isRequired,
+  fetchBooks: PropTypes.func.isRequired, //eslint-disable-line
 };
 
 const mapStateToProps = (state) => ({
@@ -64,6 +82,7 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   removeBook: (book) => dispatch(removeBook(book)),
   changeFilter: (filter) => dispatch(changeFilter(filter)),
+  fetchBooks: (books) => dispatch(fetchBooks(books)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(BooksList);

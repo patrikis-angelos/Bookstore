@@ -1,6 +1,6 @@
 import actions from '../actions/index';
 
-const { CREATE_BOOK, REMOVE_BOOK } = actions; //eslint-disable-line
+const { CREATE_BOOK, REMOVE_BOOK, FETCH_BOOKS } = actions;
 
 const booksReducer = (bookState = [], action) => {
   switch (action.type) {
@@ -16,6 +16,9 @@ const booksReducer = (bookState = [], action) => {
         }
       }
       return books;
+    }
+    case FETCH_BOOKS: {
+      return action.books;
     }
     default:
       return bookState;
