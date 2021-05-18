@@ -21,7 +21,12 @@ const BooksList = (props) => {
   }, []);
 
   const handleRemove = (book) => {
-    props.removeBook(book);
+    fetch(`https://hidden-wildwood-65842.herokuapp.com/api/books/${book.id}`, {
+      mode: 'cors',
+      method: 'DELETE',
+    }).then(() => {
+      props.removeBook(book);
+    });
   };
 
   const handleFilterChange = (filter) => {

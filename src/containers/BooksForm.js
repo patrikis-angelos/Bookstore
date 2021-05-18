@@ -20,11 +20,22 @@ const BooksForm = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const book = {
-      id: Math.round(Math.random() * 1000),
       title,
       category,
     };
-    props.createBook(book);
+    fetch('https://hidden-wildwood-65842.herokuapp.com/api/books', {
+      mode: 'cors',
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify(book),
+    })
+      .then((r) => r.json())
+      .then((b) => {
+        props.createBook(b);
+      });
   };
 
   const options = categories.map((option) => (
