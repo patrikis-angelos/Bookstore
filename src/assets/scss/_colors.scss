@@ -1,0 +1,25 @@
+$light-grey: #c4c4c4;
+$black: #121212;
+
+$colors: (
+  azure: #0290ff,
+  blue: #4386bf,
+  black: $black,
+  dark-grey: #888,
+  light-grey: $light-grey,
+  white: white,
+);
+
+@each $key, $value in $colors {
+  .color-#{"" + $key} {
+    color: $value;
+  }
+
+  .background-#{"" + $key} {
+    background-color: $value;
+  }
+}
+
+.hover-black:hover {
+  color: $black;
+}

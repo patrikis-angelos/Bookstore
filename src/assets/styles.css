@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;700&display=swap");
+.nav {
+  width: 100%;
+  height: 95px;
+  padding: 25px 100px;
+}
+
+.select {
+  display: block;
+  border: none;
+  appearance: none;
+}
+
+.select:focus {
+  outline: none;
+}
+
+.icon-wrapper {
+  border: 1px solid #e8e8e8;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.icon {
+  align-self: center;
+  margin-left: 14px;
+  width: 17px;
+  height: 17px;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.max-width-200 {
+  width: 300px;
+  word-wrap: break-word;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.m-t-5 {
+  margin-top: 5px;
+}
+
+.m-b-5 {
+  margin-bottom: 5px;
+}
+
+.m-l-5 {
+  margin-left: 5px;
+}
+
+.m-r-5 {
+  margin-right: 5px;
+}
+
+.p-t-5 {
+  padding-top: 5px;
+}
+
+.p-b-5 {
+  padding-bottom: 5px;
+}
+
+.p-l-5 {
+  padding-left: 5px;
+}
+
+.p-r-5 {
+  padding-right: 5px;
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
+
+.m-l-10 {
+  margin-left: 10px;
+}
+
+.m-r-10 {
+  margin-right: 10px;
+}
+
+.p-t-10 {
+  padding-top: 10px;
+}
+
+.p-b-10 {
+  padding-bottom: 10px;
+}
+
+.p-l-10 {
+  padding-left: 10px;
+}
+
+.p-r-10 {
+  padding-right: 10px;
+}
+
+.m-t-20 {
+  margin-top: 20px;
+}
+
+.m-b-20 {
+  margin-bottom: 20px;
+}
+
+.m-l-20 {
+  margin-left: 20px;
+}
+
+.m-r-20 {
+  margin-right: 20px;
+}
+
+.p-t-20 {
+  padding-top: 20px;
+}
+
+.p-b-20 {
+  padding-bottom: 20px;
+}
+
+.p-l-20 {
+  padding-left: 20px;
+}
+
+.p-r-20 {
+  padding-right: 20px;
+}
+
+.m-t-30 {
+  margin-top: 30px;
+}
+
+.m-b-30 {
+  margin-bottom: 30px;
+}
+
+.m-l-30 {
+  margin-left: 30px;
+}
+
+.m-r-30 {
+  margin-right: 30px;
+}
+
+.p-t-30 {
+  padding-top: 30px;
+}
+
+.p-b-30 {
+  padding-bottom: 30px;
+}
+
+.p-l-30 {
+  padding-left: 30px;
+}
+
+.p-r-30 {
+  padding-right: 30px;
+}
+
+.m-t-40 {
+  margin-top: 40px;
+}
+
+.m-b-40 {
+  margin-bottom: 40px;
+}
+
+.m-l-40 {
+  margin-left: 40px;
+}
+
+.m-r-40 {
+  margin-right: 40px;
+}
+
+.p-t-40 {
+  padding-top: 40px;
+}
+
+.p-b-40 {
+  padding-bottom: 40px;
+}
+
+.p-l-40 {
+  padding-left: 40px;
+}
+
+.p-r-40 {
+  padding-right: 40px;
+}
+
+.m-t-100 {
+  margin-top: 100px;
+}
+
+.m-b-100 {
+  margin-bottom: 100px;
+}
+
+.m-l-100 {
+  margin-left: 100px;
+}
+
+.m-r-100 {
+  margin-right: 100px;
+}
+
+.p-t-100 {
+  padding-top: 100px;
+}
+
+.p-b-100 {
+  padding-bottom: 100px;
+}
+
+.p-l-100 {
+  padding-left: 100px;
+}
+
+.p-r-100 {
+  padding-right: 100px;
+}
+
+.m-t-150 {
+  margin-top: 150px;
+}
+
+.m-b-150 {
+  margin-bottom: 150px;
+}
+
+.m-l-150 {
+  margin-left: 150px;
+}
+
+.m-r-150 {
+  margin-right: 150px;
+}
+
+.p-t-150 {
+  padding-top: 150px;
+}
+
+.p-b-150 {
+  padding-bottom: 150px;
+}
+
+.p-l-150 {
+  padding-left: 150px;
+}
+
+.p-r-150 {
+  padding-right: 150px;
+}
+
+.color-azure {
+  color: #0290ff;
+}
+
+.background-azure {
+  background-color: #0290ff;
+}
+
+.color-blue {
+  color: #4386bf;
+}
+
+.background-blue {
+  background-color: #4386bf;
+}
+
+.color-black {
+  color: #121212;
+}
+
+.background-black {
+  background-color: #121212;
+}
+
+.color-dark-grey {
+  color: #888;
+}
+
+.background-dark-grey {
+  background-color: #888;
+}
+
+.color-light-grey {
+  color: #c4c4c4;
+}
+
+.background-light-grey {
+  background-color: #c4c4c4;
+}
+
+.color-white {
+  color: white;
+}
+
+.background-white {
+  background-color: white;
+}
+
+.hover-black:hover {
+  color: #121212;
+}
+
+.mont-bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.mont-regular {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.roboto-light {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+}
+
+.roboto-bold {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+}
+
+.big {
+  font-size: 30px;
+}
+
+.medium {
+  font-size: 22px;
+}
+
+.standard {
+  font-size: 13px;
+}
+
+.regular {
+  font-size: 16px;
+}
+
+.book {
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding-right: 10%;
+}
+
+.book-button {
+  padding: 0;
+}
+
+.complition-border {
+  width: 68px;
+  height: 68px;
+  background: linear-gradient(to bottom, #307bbe, #379cf6);
+  margin-left: 100px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.complition-inner {
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+}
+
+.incomplete {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 70px;
+  height: 70px;
+  background: conic-gradient(transparent, transparent 66%, #dbdbdb 66%, #dbdbdb);
+  border-radius: 50%;
+}
+
+.progress-button {
+  padding: 8px 20px;
+  border-radius: 3px;
+}
+
+.create-book {
+  width: 100%;
+}
+
+.title {
+  width: 55%;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.select-wrapper {
+  width: 22%;
+}
+
+.form-select {
+  border: 1px solid #c4c4c4;
+  width: 100%;
+  appearance: none;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.arrow {
+  width: 5px;
+  height: 10px;
+  border-top: 10px solid #888;
+  border-bottom: 10px solid white;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+  top: 15px;
+  right: 10px;
+}
+
+.submit-button {
+  border: none;
+  border-radius: 4px;
+  width: 17%;
+}
+
+/*# sourceMappingURL=styles.css.map */

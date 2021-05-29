@@ -1,0 +1,39 @@
+.create-book {
+  width: 100%;
+}
+
+.title {
+  width: 55%;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.select-wrapper {
+  width: 22%;
+}
+
+.form-select {
+  border: 1px solid #c4c4c4;
+  width: 100%;
+  appearance: none;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.arrow {
+  width: 5px;
+  height: 10px;
+  border-top: 10px solid #888;
+  border-bottom: 10px solid white;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+  top: 15px;
+  right: 10px;
+}
+
+.submit-button {
+  border: none;
+  border-radius: 4px;
+  width: 17%;
+}
